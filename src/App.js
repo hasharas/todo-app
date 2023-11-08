@@ -24,7 +24,7 @@ function App() {
 
   const handleDeleteTodo = index =>{
     let reduceTodo = [...allTodos];
-    reduceTodo.splice (index);
+    reduceTodo.splice (index,1);
 
     localStorage.setItem ('todolist', JSON.stringify (reduceTodo));
     setTodos (reduceTodo);
